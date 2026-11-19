@@ -1,0 +1,11 @@
+[hadoop@namenode ~]$ hdfs dfs -ls /user/hadoop/input
+Found 1 items
+-rw-r--r--   2 hadoop supergroup         41 2026-11-19 06:40 /user/hadoop/input/words.txt
+[hadoop@namenode ~]$ hdfs dfs -cat /user/hadoop/input/words.txt
+hadoop yarn hdfs
+hadoop mapreduce hadoop
+[hadoop@namenode ~]$ hdfs dfs -cat /user/hadoop/output-wordcount/part-r-00000
+hadoop	3
+hdfs	1
+mapreduce	1
+yarn	1

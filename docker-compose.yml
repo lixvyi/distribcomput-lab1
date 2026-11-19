@@ -1,0 +1,48 @@
+name: hadoop-lab
+
+services:
+  namenode:
+    build: .
+    image: hadoop-lab-rocky:9.8
+    container_name: namenode
+    hostname: namenode
+    networks:
+      labnet:
+        ipv4_address: 192.168.56.11
+    ports:
+      - "9870:9870"
+      - "8088:8088"
+      - "19888:19888"
+    volumes:
+      - ./cache:/opt/cache:ro
+      - ./scripts:/opt/lab:ro
+      - ./logs:/var/lab-logs
+
+  datanode1:
+    image: hadoop-lab-rocky:9.8
+    container_name: datanode1
+    hostname: datanode1
+    depends_on:
+      - namenode
+    networks:
+      labnet:
+        ipv4_address: 192.168.56.12
+
+  datanode2:
+    image: hadoop-lab-rocky:9.8
+    container_name: datanode2
+    hostname: datanode2
+    depends_on:
+      - namenode
+    networks:
+      labnet:
+        ipv4_address: 192.168.56.13
+
+networks:
+  labnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.56.0/24
+          gateway: 192.168.56.1

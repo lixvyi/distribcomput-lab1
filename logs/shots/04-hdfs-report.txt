@@ -1,0 +1,65 @@
+[hadoop@namenode ~]$ hdfs dfsadmin -report
+Configured Capacity: 2162202353664 (1.97 TB)
+Present Capacity: 2032819207970 (1.85 TB)
+DFS Remaining: 2032818479104 (1.85 TB)
+DFS Used: 728866 (711.78 KB)
+DFS Used%: 0.00%
+Replicated Blocks:
+	Under replicated blocks: 0
+	Blocks with corrupt replicas: 0
+	Missing blocks: 0
+	Missing blocks (with replication factor 1): 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+Erasure Coded Block Groups: 
+	Low redundancy block groups: 0
+	Block groups with corrupt internal blocks: 0
+	Missing block groups: 0
+	Badly Distributed Blocks: 0
+	Low redundancy blocks with highest priority to recover: 0
+	Pending deletion blocks: 0
+
+-------------------------------------------------
+Live datanodes (2):
+
+Name: 192.168.56.12:9866 (datanode1)
+Hostname: datanode1
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 364433 (355.89 KB)
+Non DFS Used: 9699217519 (9.03 GB)
+DFS Remaining: 1016409239552 (946.60 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 94.02%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Thu Nov 19 06:48:44 UTC 2026
+Last Block Report: Thu Nov 19 06:45:12 UTC 2026
+Num of Blocks: 4
+
+
+Name: 192.168.56.13:9866 (datanode2)
+Hostname: datanode2
+Decommission Status : Normal
+Configured Capacity: 1081101176832 (1006.85 GB)
+DFS Used: 364433 (355.89 KB)
+Non DFS Used: 9699217519 (9.03 GB)
+DFS Remaining: 1016409239552 (946.60 GB)
+DFS Used%: 0.00%
+DFS Remaining%: 94.02%
+Configured Cache Capacity: 0 (0 B)
+Cache Used: 0 (0 B)
+Cache Remaining: 0 (0 B)
+Cache Used%: 100.00%
+Cache Remaining%: 0.00%
+Xceivers: 0
+Last contact: Thu Nov 19 06:48:44 UTC 2026
+Last Block Report: Thu Nov 19 06:45:12 UTC 2026
+Num of Blocks: 4
+
+

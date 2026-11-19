@@ -1,0 +1,7 @@
+[hadoop@namenode ~]$ for host in namenode datanode1 datanode2; do ssh -o BatchMode=yes "$host" "hostname && whoami"; done
+namenode
+hadoop
+datanode1
+hadoop
+datanode2
+hadoop

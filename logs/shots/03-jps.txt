@@ -1,0 +1,14 @@
+[hadoop@namenode ~]$ jps
+241 NameNode
+1090 JobHistoryServer
+565 SecondaryNameNode
+1835 Jps
+876 ResourceManager
+[hadoop@namenode ~]$ ssh datanode1 jps
+688 Jps
+295 NodeManager
+104 DataNode
+[hadoop@namenode ~]$ ssh datanode2 jps
+641 Jps
+294 NodeManager
+104 DataNode

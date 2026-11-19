@@ -1,0 +1,6 @@
+[hadoop@namenode ~]$ yarn node -list -all
+2026-11-19 06:48:49,436 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at namenode/192.168.56.11:8032
+Total Nodes:2
+         Node-Id	     Node-State	Node-Http-Address	Number-of-Running-Containers
+ datanode1:39415	        RUNNING	   datanode1:8042	                           0
+ datanode2:39237	        RUNNING	   datanode2:8042	                           0
